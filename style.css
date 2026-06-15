@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f3f5f7;
+    color: #222;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* шапка */
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1f8a70;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #1f8a70;
+}
+
+main {
+    padding: 25px 15px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* кнопки */
+.btn, button {
+    background: #1f8a70;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn:hover, button:hover {
+    background: #176a56;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* формы */
+.form-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 25px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.radio {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.radio input {
+    width: auto;
+}
+
+.form-box button {
+    margin-top: 18px;
+    width: 100%;
+}
+
+.error {
+    color: #c0392b;
+    background: #fdecea;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+th {
+    background: #f0f2f4;
+}
+
+small {
+    color: #777;
+}
+
+.status-form select, .status-form input {
+    width: auto;
+    margin-bottom: 5px;
+}
+
+footer {
+    background: #fff;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+    color: #777;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* адаптив под телефон */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    table {
+        font-size: 12px;
+    }
+    th, td {
+        padding: 6px;
+    }
+}
