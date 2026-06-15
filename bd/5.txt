@@ -1,0 +1,4 @@
+-- администратор (логин: adminka, пароль: password)
+INSERT INTO users (login, password, fio, phone, email, role) VALUES
+('adminka', '$2y$12$Bvk0M1CyYwlHrMaXGbSFe.rCXJdXflReenUMRvI7lvuD6VJXKXNrG',
+'Администратор', '+7(900)-000-00-00', 'admin@mail.ru', 'admin');

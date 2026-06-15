@@ -1,0 +1,13 @@
+-- заявки
+CREATE TABLE requests (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    phone VARCHAR(30) NOT NULL,
+    service_id INT NOT NULL,
+    req_date DATE NOT NULL,
+    req_time TIME NOT NULL,
+    payment VARCHAR(10) NOT NULL,
+    status VARCHAR(10) NOT NULL DEFAULT 'new',
+    cancel_reason VARCHAR(255) DEFAULT NULL
+);
